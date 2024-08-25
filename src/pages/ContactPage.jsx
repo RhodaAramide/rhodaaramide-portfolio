@@ -1,11 +1,12 @@
 import React from 'react'
-import Header from '../components/Header'
+
 import Contact from '../components/Contact'
+import Navbar from '../components/Navbar'
 
 const ContactPage = () => {
   return (
     <div>
-        <Header />
+        <Navbar />
         <Contact />
     </div>
   )

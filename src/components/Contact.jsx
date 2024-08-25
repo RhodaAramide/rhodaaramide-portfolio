@@ -53,7 +53,7 @@ const Contact = () => {
                                focus:border-accent font-light bg-primary px-4 py-5 text-base placeholder:text-white/60 outline-none"                             
                               />
                               <input 
-                              type='lastnam' 
+                              type='lastname' 
                               name='lastname'
                               placeholder='Last name'
                               required

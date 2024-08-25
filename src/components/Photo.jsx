@@ -1,4 +1,4 @@
-import profile from '../assets/images/profile1.jpeg';
+import profile from '../assets/images/profile.jpeg';
 import { motion } from 'framer-motion';
 
 

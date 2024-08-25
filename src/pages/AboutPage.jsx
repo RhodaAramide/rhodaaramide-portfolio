@@ -1,11 +1,12 @@
 import React from 'react'
-import Header from '../components/Header'
+
 import About from '../components/About'
+import Navbar from '../components/Navbar'
 
 const AboutPage = () => {
   return (
     <div>
-        <Header />
+        <Navbar />
         <About />
     </div>
   )

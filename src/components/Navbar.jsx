@@ -39,11 +39,15 @@ const Navbar = () => {
     };
 
     return (        
-        <nav className="bg-primary text-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-16">
-                    <div className="flex items-center">
-                        
+        <nav className=" bg-primary text-white ">
+            <div className=" py-4 xl:py-8 sm:px-6">
+                <div className="container mx-auto flex items-center justify-between h-16">
+                    <Link href="/">
+                        <h1 className="text-white text-4xl font-bold">
+                            Rhoda<span className="text-accent">Aramide.</span>
+                        </h1>
+                    </Link>
+                    <div className="flex items-center">                        
                         <div className="hidden md:block">
                             <div className="mr-8 flex items-baseline space-x-4">
                             {links.map((link, index) => {
@@ -104,15 +108,16 @@ const Navbar = () => {
                         </button>
                     </div>
                 </div>
+                {/* mobile menu */}
                 <div className={`${isMobileMenuOpen ? 'block' : 'hidden'} md:hidden`}>
-                    <div className="flex flex-col items-baseline gap-4 p-4 sm:px-3">
+                    <div className="flex flex-col gap-4 p-4 sm:px-3">
                         {links.map((link, index) => {
                         return (
                         <Link to={link.path} key={index} 
                             className={`${
                                 link.path === pathname 
                                 && "text-accent  border-b-2 border-accent"
-                            } capitalize text-lg font-bold hover:text-accent transition-all
+                            } block w-full capitalize text-lg font-bold hover:text-accent transition-all
                             > 
                             }`}>
                             {link.name}

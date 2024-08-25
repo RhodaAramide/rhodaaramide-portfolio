@@ -1,16 +1,16 @@
-import Loader from "react-loaders";
+
 import { Link } from 'react-router-dom';
 
 
 // component imports
-import Header from "../components/Header";
 import Social from "../components/Social";
 import Photo from "../components/Photo";
+import Navbar from "../components/Navbar";
 
 const HomePage = () => {
     return (
         <div className="bg-primary xl:pb-24 text-white h-full">
-        <Header />
+        <Navbar />
         <div className="container mx-auto mt-6 h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between ">                                        
         <div className="text-center xl:text-left order-2 xl:order-none">

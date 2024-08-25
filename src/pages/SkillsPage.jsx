@@ -1,11 +1,12 @@
 import React from 'react'
-import Header from '../components/Header'
+
 import Skills from '../components/Skills'
+import Navbar from '../components/Navbar'
 
 const SkillsPage = () => {
   return (
     <div>
-        <Header />
+        <Navbar />
         <Skills />
 
     </div>
