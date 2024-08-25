@@ -88,9 +88,9 @@ const Contact = () => {
                             
                         ></textarea> 
                         <div className="flex justify-center">
-                        <button className="max-w-40 flex items-center justify-center text-md bg-accent hover:bg-secondary text-white/80 font-bold py-3 px-4 rounded-full mt-2">
-                            Send Message    
-                        </button>
+                            <button type="submit" className="max-w-40 flex items-center justify-center text-md bg-accent hover:bg-secondary text-white/80 font-bold py-3 px-4 rounded-full mt-2">
+                                Send Message    
+                            </button>
                         </div>
                     </form>
                 </div>
