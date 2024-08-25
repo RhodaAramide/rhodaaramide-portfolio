@@ -19,7 +19,7 @@ Welcome to my portfolio website! This site showcases my skills, education, exper
 
 ## Deployed link
 
-To view my portfolio website, simply click [here](https://www.ayomideadeoye.com/).
+To view my portfolio website, simply click [here](https://rhodaaramideportfolio.netlify.app/).
 
 ## License
 

@@ -1,4 +1,4 @@
-import profile from '../assets/images/profile.jpeg';
+import profile from '../assets/images/profile1.jpeg';
 import { motion } from 'framer-motion';
 
 
@@ -24,7 +24,7 @@ const Photo = () => {
                 fill="true"
                 alt="profile" 
                 className='w-[298px] h-[298px] 
-                xl:w-[498px] xl:h-[498px] rounded-full
+                xl:w-[460px] xl:h-[460px] rounded-full
                 mix-blend-lighten object-contain'
                 />
             </motion.div>
