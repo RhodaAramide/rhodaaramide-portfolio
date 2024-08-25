@@ -32,8 +32,9 @@ const Contact = () => {
             <div className='flex flex-col xl:flex-row gap-[30px]'>
                 {/* form */}
                 <div className="xl:w-[54%] order-2 xl:order-none">
-                    <form name="contact" method="POST" data-netlify="true"
+                    <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field"
                     className="flex flex-col gap-6 p-10 bg-white/10 rounded-xl">
+                        <input type="hidden" name="form-name" value="contact" />
                         <h3 className="text-4xl font-bold text-accent ">Let's work together</h3>
                         <p className="text-white/60">
                         I am interested in great opportunities - especially
