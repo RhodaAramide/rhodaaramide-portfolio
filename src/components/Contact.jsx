@@ -21,28 +21,30 @@ const contactInfo = [
 
 const Contact = () => {
     const handleSubmit = (e) => {
-        e.preventDefault();
-        const formData = new FormData(e.target);
-        const data = Object.fromEntries(formData.entries());
-        console.log(data);
-        alert("Message sent successfully");
-        // Add your Netlify form submission logic here
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(data).toString(),
+    // Don't prevent default form submission
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+    console.log(data);
+
+    // Netlify form submission logic here
+    fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(data).toString(),
+    })
+        .then(() => {
+            console.log("Form submission successful");
+            // Netlify will automatically redirect to the success page
         })
-            .then(() => {
-                console.log("Form submission successful");                
-            }).catch((error) => console.error("Form submission error:", error));
-    };
+        .catch((error) => console.error("Form submission error:", error));
+};
 
     return (
         <motion.section
             initial={{ opacity: 0 }}
             animate={{
                 opacity: 1,
-                transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+                transition: { delay: 1.4, duration: 0.4, ease: "easeIn" },
             }}
             className="py-6"
         >
