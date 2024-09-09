@@ -63,7 +63,8 @@ const Navbar = () => {
                                 </Link>     
                             );  
                         })}
-                            <Link to="https://docs.google.com/document/d/1oeh65KCq0XOKJRKQbkBtcUXeHl04gw-95GCGJSgIEWc/edit?usp=sharing">
+                            <Link target="_blank" 
+                            to="https://docs.google.com/document/d/1Xaw7PkhFyBKrvq9CbpFN9cbmc_QsoPZzDJ-Sg-RYFlQ/edit?usp=sharing">
                                 <button className="flex items-center gap-2 text-lg bg-accent hover:bg-secondary text-white font-bold py-2 px-4 rounded-full mt-4">
                                         My CV
                                 </button>

@@ -36,23 +36,23 @@ const experience = {
     description: "I have worked on several projects as a frontend developer. I have also worked as an intern for a few companies.",
     items:[
         {
-        company: "Programmify",
+        company: "Programmify(Remote)",
         role: "Frontend Developer Intern",
         duration: "July, 2024 till Date",
     },
     {
-        company: "Nigerian Meteorological Agency",
+        company: "Nigerian Meteorological Agency(NiMet), Abuja",
         role: "Software Developer Intern",
         duration: "March, 2023 - August, 2023",
     },
     {
-        company: "International Institute of Tropical Agriculture",
-        role: "Software Developer Intern",
+        company: "International Institute of Tropical Agriculture(IITA), Ibadan",
+        role: "IT Systems and Application Intern",
         duration: "February, 2022 - August, 2023",
     },
     {
-        company: "Nigerian Meteorological Agency",
-        role: "Software Developer Intern",
+        company: "Nigerian Meteorological Agency(NiMet), Abuja",
+        role: "Systems and Software Intern",
         duration: "March, 2020 - June, 2020",
     },    
 ],
@@ -69,7 +69,7 @@ const Resume = () => {
     className='flex items-center justify-center py-12 xl:py-0'
     >
        <div className='container mx-auto'>
-        <div className='flex flex-col xl:flex-row justify-end gap-4'>
+        <div className='flex flex-col xl:flex-row justify-end gap-4 order-2'>
         <div className='w-2/4'>
         <h1 className='w-full text-xl bg-accent hover:bg-secondary text-white font-bold py-2 px-4 mr-4 rounded mt-4'>{education.title}</h1>
         </div>
@@ -79,7 +79,7 @@ const Resume = () => {
             
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8'>
                 {education.items.map((item, index) => (
-                    <div key={index} className='bg-white/10 h-[184px] py-6 px-10
+                    <div key={index} className='bg-white/10 h-[140px] py-4 px-10
                     rounded-xl flex flex-col justify center items-center lg:items-start gap-1'>
                         <p className='text-accent'>{item.duration}</p>
                         <h2 className=''>{item.institution}</h2>
@@ -90,7 +90,7 @@ const Resume = () => {
                 </div>
             </div>
         </div>
-        <div className='flex mt-8 flex-col xl:flex-row justify-end gap-4'>
+        <div className='flex mt-8 flex-col xl:flex-row justify-end gap-4 order-1 mb-8'>
         <div className='w-2/4'>
         <h1 className='w-full text-xl bg-accent hover:bg-secondary text-white font-bold py-2 px-4 mr-4 rounded mt-4'>{experience.title}</h1>
         </div>
@@ -100,14 +100,13 @@ const Resume = () => {
             
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8'>
                 {experience.items.map((item, index) => (
-                    <div key={index} className='bg-white/10 h-[184px] py-6 px-10
+                    <div key={index} className='bg-white/10 h-[200px] py-6 px-10
                     rounded-xl flex flex-col justify center items-center lg:items-start gap-1'>
                         <p className='text-accent'>{item.duration}</p>
                         
-                        <p className='text-xl max-w-[260px] min-h-[50px] text-center lg:text-left'>{item.role}</p>
-                        <div className='flex items-center gap-3'>
-                            <span className='w-[6px] h-[6px] rounded-full text-accent'>@</span>
-                            <p className='text-white text-xl'>{item.company}</p>
+                        <p className='text-lg max-w-[260px] min-h-[50px] text-center lg:text-left'>{item.role}</p>
+                        <div className='flex items-center gap-3'>                           
+                            <p className='text-white/60 text-lg pb-2 font-bold'>{item.company}</p>
                         </div>
                     </div>
                 ))}

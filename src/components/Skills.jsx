@@ -65,19 +65,6 @@ const Skills = () => {
     <div className='flex flex-col xl:flex-row justify-end gap-4'>
         <div className='w-2/4 '>            
         <h1 className='w-full text-xl bg-accent hover:bg-secondary text-white font-bold py-2 px-4 mr-4 rounded mt-4'>{skills.title}</h1>
-        <div className="">
-        {skills.skillList.map((skill, index) => (
-          <div key={index}>
-            <div className="w-full h-[] bg-white/20 rounded-xl 
-            flex justify-start items-left group">
-                <div className='font-bold px-8 group-hover:text-accent transition-all
-                duration-300'>
-                {skill.name}
-            </div>
-            </div>
-          </div>
-        ))}
-      </div>
         </div>
         <div className='mt-4'>
             
