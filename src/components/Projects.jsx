@@ -11,6 +11,7 @@ import project4 from "../assets/images/projects/4.png";
 import project5 from "../assets/images/projects/5.png";
 import project6 from "../assets/images/projects/6.png";
 import project7 from "../assets/images/projects/7.png";
+import project8 from "../assets/images/projects/8.png";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -21,6 +22,21 @@ const projects = [
     {
         id: 1,
         num: "01",
+        title: "AI Blog Website",
+        description: "The AI Blog Website is a React.js application that allows users to browse and read articles and also explore resources on Artificial Intelligence. The website provides a wide selection of articles and resources from various authors and categories.",
+        stack:[
+            { name: "ReactJS"}, 
+            { name: "Tailwind CSS" }, 
+            { name: "Firebase" }, 
+            
+        ],
+        image: project8,
+        github: "https://github.com/RhodaAramide/aiblog-project",
+        link: "https://aiblogwebapp.netlify.app/",
+    },    
+    {
+        id: 2,
+        num: "02",
         title: "Online Bookstore Website",
         description: "The Bookstore Website is a React.js application that allows users to browse and purchase books online. The website provides a wide selection of books from various genres and authors.",
         stack:[
@@ -33,8 +49,8 @@ const projects = [
         link: "https://bookstore-prjt.onrender.com/",
     },    
     {
-        id: 2,
-        num: "02",
+        id: 3,
+        num: "03",
         title: "Travel and Tours Website",
         description: "EaseExplore is a travel and tours website built using React.js and Tailwind CSS. This website helps to explore and book tours and travel packages to various destinations in Nigeria.",
         stack:[
@@ -46,8 +62,8 @@ const projects = [
         link: "https://exploreease-fwp8.onrender.com/",
     },    
     {
-        id: 3,
-        num: "03",
+        id: 4,
+        num: "04",
         title: "Personal Budget Tracker",
         description: "A web application that allows users to manage their finances by adding, editing, and deleting income and expense transactions.",
         stack:[
@@ -60,8 +76,8 @@ const projects = [
         link: "https://rhodaaramide.github.io/Budget-Tracker/",
     },    
     {
-        id: 4,
-        num: "04",
+        id: 5,
+        num: "05",
         title: "Food Recipe App",
         description: "A food recipe app is a digital platform designed to help users discover, plan, and prepare a wide variety of dishes and meals. This app caters to individuals with diverse culinary interests and skill levels.",
         stack:[
@@ -74,8 +90,8 @@ const projects = [
         link: "https://rhodafoodrecipe.netlify.app/",
     },
     {
-        id: 5,
-        num: "05",
+        id: 6,
+        num: "06",
         title: "GenVista",
         description: "This Genome Browser is a comprehensive web-based tool designed to visualize, analyze, and annotate genomic data. It offers an intuitive user interface with features such as zooming, panning, and searching, along with customizable visualization settings.",
         stack:[
@@ -88,8 +104,8 @@ const projects = [
         link: "https://genvista.onrender.com/",
     },
     {
-        id: 6,
-        num: "06",
+        id: 7,
+        num: "07",
         title: "Finance Dashboard",
         description: "This is a finance dashboard that comes up after a login page with different sections like products, customer and team and a logout tab.",
         stack:[
@@ -102,8 +118,8 @@ const projects = [
         link: "https://group10-capstone2.netlify.app/dashboard",
     },
     {
-        id: 7,
-        num: "07",
+        id: 8,
+        num: "08",
         title: "Fylo dark theme landing page",
         description: "A dark-themed landing page for Fylo that stores all your most important files in one secure location and you can access them wherever you need, share and collaborate.",
         stack:[
